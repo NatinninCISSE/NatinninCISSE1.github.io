@@ -2,9 +2,9 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'PHPMailer/src/Exception.php';
-require 'PHPMailer/src/PHPMailer.php';
-require 'PHPMailer/src/SMTP.php';
+require 'Exception.php';
+require 'PHPMailer.php';
+require 'SMTP.php';
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $nom = $_POST['nom'] ?? '';
@@ -19,8 +19,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com'; // ou smtp.mailtrap.io pour les tests
         $mail->SMTPAuth = true;
-        $mail->Username = 'tonemail@gmail.com';
-        $mail->Password = 'motdepasseoumotdepassespécial';
+        $mail->Username = 'natinnincisse07@gmail.com';
+        $mail->Password = 'ykfj jkwe lcio abbt';
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
 
